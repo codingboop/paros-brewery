@@ -21,3 +21,4 @@ pnpm-debug.log*
 # Ignore picture folders
 C4AD53CC-F794-4100-9DA6-EBB4901E7AD6/
 Pictures/
+.vercel
