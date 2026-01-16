@@ -1,0 +1,589 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Paros Brewery & Kitchen | Premium Rooftop Brewery Bangalore">
+  <main class="min-h-screen overflow-hidden">
+    <!-- Sticky Reservation Button (Mobile) -->
+    <a 
+      href="#reserve" 
+      class="fixed bottom-6 right-6 z-50 md:hidden px-6 py-4 bg-paros-blue text-paros-white font-light tracking-wider uppercase text-xs shadow-2xl hover:bg-paros-dark-blue transition-all duration-300"
+    >
+      Reserve Table
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-40 px-6 py-5 md:py-6 bg-paros-white/95 backdrop-blur-sm border-b border-paros-black/5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="font-serif text-2xl font-light text-paros-black tracking-wide">
+          Paros
+        </div>
+        <div class="hidden md:flex items-center gap-10 text-xs font-light tracking-[0.15em] uppercase text-paros-black/70">
+          <a href="#story" class="hover:text-paros-blue transition-colors duration-300">Story</a>
+          <a href="#experience" class="hover:text-paros-blue transition-colors duration-300">Experience</a>
+          <a href="#brews" class="hover:text-paros-blue transition-colors duration-300">Brews</a>
+          <a href="#celebrations" class="hover:text-paros-blue transition-colors duration-300">Celebrations</a>
+          <a href="#visit" class="hover:text-paros-blue transition-colors duration-300">Visit</a>
+        </div>
+        <a 
+          href="#reserve" 
+          class="hidden md:inline-block px-6 py-2.5 border border-paros-blue text-paros-blue font-light tracking-[0.15em] uppercase text-xs hover:bg-paros-blue hover:text-paros-white transition-all duration-300"
+        >
+          Reserve
+        </a>
+      </div>
+    </nav>
+
+    <!-- 1️⃣ HERO SECTION - Full Viewport, Clean -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-paros-cream">
+      <!-- Main Content - Centered & Minimal -->
+      <div class="relative z-10 w-full max-w-3xl mx-auto px-6 text-center">
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-paros-black leading-[1.1] mb-6">
+          Where Conversations<br />
+          <span class="italic text-paros-blue">Flow Like Water</span>
+        </h1>
+        
+        <p class="text-sm md:text-base font-light text-paros-gray max-w-md mx-auto mb-10 tracking-wide">
+          Bangalore's largest premium rooftop brewery
+        </p>
+
+        <a 
+          href="#reserve" 
+          class="inline-block px-10 py-4 bg-paros-blue text-paros-white font-light tracking-[0.2em] uppercase text-xs hover:bg-paros-dark-blue transition-all duration-300"
+        >
+          Reserve a Table
+        </a>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <span class="text-paros-gray/50 text-xs tracking-widest uppercase">Scroll</span>
+        <div class="w-px h-8 bg-paros-gray/30"></div>
+      </div>
+    </section>
+
+    <!-- 2️⃣ BRAND STORY - Full Width Image with Overlay Text -->
+    <section id="story" class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img 
+          src="/images/ambience/DSC00284.JPEG" 
+          alt="Paros Brewery rooftop view"
+          class="w-full h-full object-cover"
+        />
+        <!-- Strong solid + gradient overlay for maximum contrast -->
+        <div class="absolute inset-0 bg-paros-black/60"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-paros-black/50 via-transparent to-transparent"></div>
+      </div>
+      
+      <div class="relative z-10 w-full max-w-6xl mx-auto px-6 md:px-12 py-24">
+        <div class="max-w-2xl">
+          <div class="w-20 h-px bg-paros-blue mb-8"></div>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-paros-white leading-tight mb-8 drop-shadow-md">
+            Born from the<br />
+            <span class="italic text-paros-light-blue">serenity of the Aegean</span>
+          </h2>
+          <div class="space-y-6">
+            <p class="text-lg font-light text-paros-white leading-relaxed">
+              Paros Brewery & Kitchen exists because we believe great conversations deserve an equally great space. Inspired by the white-washed beauty and flowing waters of the Greek islands, we've created Bangalore's largest premium rooftop brewery—a sanctuary where time slows down and connections deepen.
+            </p>
+            <p class="text-base font-light text-paros-white/90 leading-relaxed">
+              This is not a place for loud music or hurried drinks. It's a destination where craft beer meets curated cuisine, where sunsets paint the sky, and where every evening feels like a celebration of life's beautiful moments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ THE EXPERIENCE - Clean 2x2 Grid -->
+    <section id="experience" class="relative bg-paros-white py-20 md:py-32">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+            <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-gray">The Experience</p>
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+          </div>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-paros-black leading-tight">
+            Four Pillars of<br />
+            <span class="italic text-paros-blue">Paros</span>
+          </h2>
+        </div>
+
+        <!-- 2x2 Grid -->
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+          <!-- Rooftop Ambience -->
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00319.JPEG" 
+              alt="Rooftop ambience at Paros Brewery"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <!-- Stronger overlay for text contrast -->
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/85 via-paros-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <h3 class="font-serif text-2xl md:text-3xl font-light text-paros-white mb-2">Rooftop Ambience</h3>
+              <div class="w-12 h-px bg-paros-blue mb-3"></div>
+              <p class="text-sm md:text-base font-light text-paros-white/90 leading-relaxed max-w-md">
+                Open skies, flowing water features, and the gentle breeze of elevated conversations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Craft Beverages -->
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/drinks/PAROS GIN AND TONIC.jpg" 
+              alt="Craft beverages at Paros Brewery"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/85 via-paros-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <h3 class="font-serif text-2xl md:text-3xl font-light text-paros-white mb-2">Craft Beverages</h3>
+              <div class="w-12 h-px bg-paros-blue mb-3"></div>
+              <p class="text-sm md:text-base font-light text-paros-white/90 leading-relaxed max-w-md">
+                Small-batch brewed for balance and smoothness. Each sip crafted to enhance conversations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Curated Cuisine -->
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/SPICY THAI PRAWNS.jpg" 
+              alt="Curated cuisine at Paros Brewery"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/85 via-paros-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <h3 class="font-serif text-2xl md:text-3xl font-light text-paros-white mb-2">Curated Cuisine</h3>
+              <div class="w-12 h-px bg-paros-blue mb-3"></div>
+              <p class="text-sm md:text-base font-light text-paros-white/90 leading-relaxed max-w-md">
+                Global flavors with Mediterranean soul, fire-crafted to perfection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Celebrations -->
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00335.JPEG" 
+              alt="Celebrations at Paros Brewery"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/85 via-paros-black/30 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <h3 class="font-serif text-2xl md:text-3xl font-light text-paros-white mb-2">Celebrations</h3>
+              <div class="w-12 h-px bg-paros-blue mb-3"></div>
+              <p class="text-sm md:text-base font-light text-paros-white/90 leading-relaxed max-w-md">
+                From intimate dinners to milestone celebrations. A space where moments become memories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ CRAFT BEER PHILOSOPHY -->
+    <section id="brews" class="relative py-20 md:py-32 bg-paros-cream overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+          <!-- Left: Text Content -->
+          <div class="space-y-8">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-px bg-paros-blue/40"></div>
+              <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-gray">Craft Beer Philosophy</p>
+            </div>
+            <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-paros-black leading-tight">
+              Brewed for Conversations,<br />
+              <span class="italic text-paros-blue">Not Chaos</span>
+            </h2>
+            <div class="space-y-4">
+              <p class="text-lg font-light text-paros-black/65 leading-relaxed">
+                Our craft beers are small-batch brewed with intention. We believe great beer should enhance moments, not dominate them.
+              </p>
+              <p class="text-base font-light text-paros-gray leading-relaxed">
+                Every brew is balanced, smooth, and drinkable—designed to flow through an evening of meaningful conversations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Drink Images -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="relative aspect-[3/4] overflow-hidden rounded-sm">
+              <img 
+                src="/images/drinks/PAROS SPECIAL MOCKTAIL.jpg" 
+                alt="Paros Special Mocktail"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="relative aspect-[3/4] overflow-hidden rounded-sm mt-8">
+              <img 
+                src="/images/drinks/SUNSET MARRY.jpg" 
+                alt="Sunset Marry"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ FOOD PHILOSOPHY -->
+    <section class="relative py-20 md:py-32 bg-paros-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+            <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-gray">Food Philosophy</p>
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+          </div>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-paros-black leading-tight mb-6">
+            Global Flavors,<br />
+            <span class="italic text-paros-blue">Mediterranean Soul</span>
+          </h2>
+          <p class="text-lg font-light text-paros-black/60 leading-relaxed max-w-2xl mx-auto">
+            Our kitchen celebrates fire-crafted cuisine that bridges continents. Mediterranean techniques meet Indian palate preferences.
+          </p>
+        </div>
+
+        <!-- Food Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/SPICY CHICKEN CHETTINAD PIZZA.jpg" 
+              alt="Spicy Chicken Chettinad Pizza"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <!-- Stronger hover overlay for contrast -->
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">Spicy Chicken Chettinad Pizza</p>
+            </div>
+          </div>
+          
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/PANEER TEMPURA BAO.jpg" 
+              alt="Paneer Tempura Bao"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">Paneer Tempura Bao</p>
+            </div>
+          </div>
+          
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/BOK CHOY AND MUSHROOM DIMSUM.jpg" 
+              alt="Bok Choy and Mushroom Dimsum"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">Bok Choy & Mushroom Dimsum</p>
+            </div>
+          </div>
+          
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/AMERICAN FISH AND CHIPS.jpg" 
+              alt="American Fish and Chips"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">American Fish & Chips</p>
+            </div>
+          </div>
+          
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/DRAGON ROLL-VEG.jpg" 
+              alt="Dragon Roll Veg"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">Dragon Roll</p>
+            </div>
+          </div>
+          
+          <div class="relative aspect-[4/3] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/BLUEBERRY CHEESE CAKE.jpg" 
+              alt="Blueberry Cheesecake"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-paros-black/80 via-paros-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <p class="text-sm font-light text-paros-white">Blueberry Cheesecake</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ PRIVATE CELEBRATIONS -->
+    <section id="celebrations" class="relative min-h-screen flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img 
+          src="/images/ambience/DSC00335.JPEG" 
+          alt="Private celebrations at Paros Brewery"
+          class="w-full h-full object-cover"
+        />
+        <!-- Strong overlay for text contrast -->
+        <div class="absolute inset-0 bg-paros-black/80"></div>
+      </div>
+      
+      <div class="relative z-10 w-full max-w-4xl mx-auto px-6 md:px-12 py-24 text-center">
+        <div class="space-y-8">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="w-12 h-px bg-paros-blue"></div>
+            <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-white">Private Celebrations</p>
+            <div class="w-12 h-px bg-paros-blue"></div>
+          </div>
+          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-paros-white leading-tight drop-shadow-lg">
+            Your Moments,<br />
+            <span class="italic text-paros-light-blue">Elevated</span>
+          </h2>
+          <div class="space-y-4 max-w-2xl mx-auto">
+            <p class="text-lg font-light text-paros-white leading-relaxed">
+              Paros is designed for celebrations of all scales. Whether it's an intimate birthday dinner, a romantic proposal, a milestone anniversary, or a corporate evening, we create the perfect ambience for your moment.
+            </p>
+            <p class="text-base font-light text-paros-white/90 leading-relaxed">
+              Our rooftop setting, flowing water features, and curated service ensure your celebration feels both grand and personal.
+            </p>
+          </div>
+          <div class="pt-6">
+            <a 
+              href="#reserve" 
+              class="inline-block px-10 py-4 border-2 border-paros-white text-paros-white font-light tracking-widest uppercase text-xs hover:bg-paros-white hover:text-paros-black transition-all duration-500"
+            >
+              Plan Your Celebration
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7️⃣ GALLERY - Clean Grid -->
+    <section class="relative py-20 md:py-32 bg-paros-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+          <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+            <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-gray">Gallery</p>
+            <div class="w-12 h-px bg-paros-blue/40"></div>
+          </div>
+        </div>
+
+        <!-- Clean Masonry-style Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <!-- Large image spanning 2 columns -->
+          <div class="col-span-2 row-span-2 relative aspect-square md:aspect-auto overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00324_1.JPEG" 
+              alt="Paros Brewery Interior"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          
+          <!-- Regular images -->
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00299.JPEG" 
+              alt="Rooftop View"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/drinks/WATERMELON PUNCH .jpg" 
+              alt="Watermelon Punch"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/MEXICAN CRUNCHY ASPARAGUS ROLLS.jpg" 
+              alt="Asparagus Rolls"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00327_1.JPEG" 
+              alt="Evening Ambience"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <!-- Another large image -->
+          <div class="col-span-2 relative aspect-[2/1] overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00329.JPEG" 
+              alt="Paros Brewery Evening"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+          
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/food/BROCC N CHEDDAR SOUP .jpg" 
+              alt="Broccoli Cheddar Soup"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+          
+          <div class="relative aspect-square overflow-hidden rounded-sm group">
+            <img 
+              src="/images/ambience/DSC00339.JPEG" 
+              alt="Ambience"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8️⃣ LOCATION & DETAILS -->
+    <section id="visit" class="relative py-20 md:py-32 bg-paros-cream">
+      <div class="max-w-7xl mx-auto px-6 md:px-12">
+        <div class="grid md:grid-cols-2 gap-12 md:gap-20">
+          <!-- Left: Details -->
+          <div class="space-y-8">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-px bg-paros-blue/40"></div>
+              <p class="text-sm font-light tracking-[0.3em] uppercase text-paros-gray">Location & Details</p>
+            </div>
+            <h2 class="font-serif text-4xl md:text-5xl font-light text-paros-black leading-tight">
+              Visit Us
+            </h2>
+            <div class="space-y-8">
+              <div>
+                <h3 class="text-xs font-light tracking-[0.2em] uppercase text-paros-gray mb-3">Address</h3>
+                <p class="text-base font-light text-paros-black/65 leading-relaxed">
+                  [Your Address Here]<br />
+                  Bangalore, Karnataka, India
+                </p>
+              </div>
+              <div>
+                <h3 class="text-xs font-light tracking-[0.2em] uppercase text-paros-gray mb-3">Timings</h3>
+                <p class="text-base font-light text-paros-black/65 leading-relaxed">
+                  Monday - Sunday<br />
+                  12:00 PM - 1:00 AM
+                </p>
+              </div>
+              <div>
+                <h3 class="text-xs font-light tracking-[0.2em] uppercase text-paros-gray mb-3">Parking</h3>
+                <p class="text-base font-light text-paros-black/65 leading-relaxed">
+                  Valet parking available
+                </p>
+              </div>
+            </div>
+            <div class="pt-4">
+              <a 
+                href="#reserve" 
+                class="inline-block px-10 py-4 bg-paros-blue text-paros-white font-light tracking-widest uppercase text-xs hover:bg-paros-dark-blue transition-all duration-500 shadow-lg"
+              >
+                Make a Reservation
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Map Placeholder -->
+          <div class="relative h-80 md:h-auto overflow-hidden rounded-sm bg-paros-light-gray">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-paros-blue/10 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-paros-blue/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <p class="text-sm font-light text-paros-gray">Google Maps Embed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9️⃣ FOOTER -->
+    <footer id="reserve" class="relative py-16 md:py-20 px-6 border-t border-paros-black/5 bg-paros-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+          <div>
+            <h3 class="font-serif text-3xl font-light text-paros-white mb-6">Paros</h3>
+            <p class="text-sm font-light text-paros-white/55 leading-relaxed mb-6">
+              Bangalore's largest premium rooftop brewery<br />
+              for conversations, celebrations & experiences.
+            </p>
+            <a 
+              href="#reserve" 
+              class="inline-block px-8 py-3 bg-paros-blue text-paros-white font-light tracking-widest uppercase text-xs hover:bg-paros-dark-blue transition-all duration-300"
+            >
+              Reserve Table
+            </a>
+          </div>
+          <div>
+            <h4 class="text-xs font-light tracking-[0.2em] uppercase text-paros-white/40 mb-6">Connect</h4>
+            <div class="space-y-3 text-sm font-light text-paros-white/60">
+              <p>hello@parosbrewery.com</p>
+              <p>+91 [Phone Number]</p>
+              <div class="flex gap-4 mt-4">
+                <a href="#" class="hover:text-paros-blue transition-colors">Instagram</a>
+                <a href="#" class="hover:text-paros-blue transition-colors">Facebook</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-xs font-light tracking-[0.2em] uppercase text-paros-white/40 mb-6">Quick Links</h4>
+            <div class="space-y-2 text-sm font-light text-paros-white/60">
+              <a href="#story" class="block hover:text-paros-blue transition-colors">Our Story</a>
+              <a href="#experience" class="block hover:text-paros-blue transition-colors">The Experience</a>
+              <a href="#brews" class="block hover:text-paros-blue transition-colors">Craft Beers</a>
+              <a href="#celebrations" class="block hover:text-paros-blue transition-colors">Celebrations</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pt-8 border-t border-paros-white/10">
+          <p class="text-xs font-light text-paros-white/35 text-center tracking-wide">
+            © 2024 Paros Brewery & Kitchen. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #0B95BC;
+    color: #FFFFFF;
+  }
+
+  /* Base image styles */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+  /* Images with object-cover need explicit dimensions */
+  img.object-cover {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
