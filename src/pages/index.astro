@@ -15,9 +15,13 @@ import Layout from '../layouts/Layout.astro';
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-40 px-6 py-5 md:py-6 bg-paros-white/95 backdrop-blur-sm border-b border-paros-black/5">
       <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <div class="font-serif text-2xl font-light text-paros-black tracking-wide">
-          Paros
-        </div>
+        <a href="/" class="flex items-center">
+          <img 
+            src="/assets/logo-full.svg" 
+            alt="Paros Brewery & Kitchen" 
+            class="h-8 md:h-10 w-auto"
+          />
+        </a>
         <div class="hidden md:flex items-center gap-10 text-xs font-light tracking-[0.15em] uppercase text-paros-black/70">
           <a href="#story" class="hover:text-paros-blue transition-colors duration-300">Story</a>
           <a href="#experience" class="hover:text-paros-blue transition-colors duration-300">Experience</a>
@@ -520,7 +524,11 @@ import Layout from '../layouts/Layout.astro';
       <div class="max-w-7xl mx-auto">
         <div class="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 class="font-serif text-3xl font-light text-paros-white mb-6">Paros</h3>
+            <img 
+              src="/assets/logo-full.svg" 
+              alt="Paros Brewery & Kitchen" 
+              class="h-10 w-auto mb-6 brightness-0 invert"
+            />
             <p class="text-sm font-light text-paros-white/55 leading-relaxed mb-6">
               Bangalore's largest premium rooftop brewery<br />
               for conversations, celebrations & experiences.

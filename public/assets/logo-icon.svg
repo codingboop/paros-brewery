@@ -1,0 +1,10 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Upper arc (rainbow/sun) -->
+  <path d="M100 20 C 60 20, 30 50, 30 90" stroke="#0B95BC" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M100 30 C 70 30, 50 50, 50 80" stroke="#79A3A1" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Lower waves (water) -->
+  <path d="M20 130 Q 50 110, 80 130 T 140 130 T 180 130" stroke="#0B95BC" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M20 150 Q 50 130, 80 150 T 140 150 T 180 150" stroke="#79A3A1" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M20 170 Q 50 150, 80 170 T 140 170 T 180 170" stroke="#0B95BC" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

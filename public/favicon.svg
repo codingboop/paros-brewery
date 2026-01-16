@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="50" r="45" fill="none" stroke="#2C2C2C" stroke-width="2"/>
-  <text x="50" y="65" font-family="serif" font-size="40" fill="#2C2C2C" text-anchor="middle">P</text>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="16" cy="16" r="14" fill="#0B95BC"/>
+  <path d="M16 8 C 10 8, 6 12, 6 18" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M6 22 Q 10 20, 14 22 T 22 22 T 26 22" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round"/>
 </svg>
