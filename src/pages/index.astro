@@ -42,16 +42,27 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </nav>
 
-    <!-- 1️⃣ HERO SECTION - Full Viewport, Clean -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden bg-paros-cream">
+    <!-- 1️⃣ HERO SECTION - Full Viewport with Background Image -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img 
+          src="/images/ambience/DSC00323.jpg" 
+          alt="Paros Brewery Rooftop"
+          class="w-full h-full object-cover object-center"
+        />
+        <!-- Overlay for text readability -->
+        <div class="absolute inset-0 bg-gradient-to-b from-paros-black/50 via-paros-black/30 to-paros-black/60"></div>
+      </div>
+      
       <!-- Main Content - Centered & Minimal -->
       <div class="relative z-10 w-full max-w-3xl mx-auto px-6 text-center">
-        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-paros-black leading-[1.1] mb-6">
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-light text-paros-white leading-[1.1] mb-6 drop-shadow-lg">
           Where Conversations<br />
-          <span class="italic text-paros-blue">Flow Like Water</span>
+          <span class="italic text-paros-light-blue">Flow Like Water</span>
         </h1>
         
-        <p class="text-sm md:text-base font-light text-paros-gray max-w-md mx-auto mb-10 tracking-wide">
+        <p class="text-sm md:text-base font-light text-paros-white/90 max-w-md mx-auto mb-10 tracking-wide drop-shadow-md">
           Bangalore's largest rooftop brewery
         </p>
 
@@ -67,8 +78,8 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Scroll Indicator -->
       <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span class="text-paros-gray/50 text-xs tracking-widest uppercase">Scroll</span>
-        <div class="w-px h-8 bg-paros-gray/30"></div>
+        <span class="text-paros-white/60 text-xs tracking-widest uppercase">Scroll</span>
+        <div class="w-px h-8 bg-paros-white/40"></div>
       </div>
     </section>
 
