@@ -399,9 +399,9 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Large & Small Grid Gallery -->
+        <!-- Large & Small Grid Gallery - Strategically arranged for uniform filling -->
         <div class="gallery-grid">
-          <!-- Large images -->
+          <!-- Row 1: Large + Small -->
           <div class="gallery-large">
             <img 
               src="/images/ambience/DSC00323.jpg" 
@@ -410,23 +410,6 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-large">
-            <img 
-              src="/images/ambience/DSC00284.JPEG" 
-              alt="Paros Brewery Rooftop View"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-large">
-            <img 
-              src="/images/ambience/DSC00335.JPEG" 
-              alt="Celebrations at Paros"
-              class="gallery-image"
-            />
-          </div>
-          
-          <!-- Small images -->
           <div class="gallery-small">
             <img 
               src="/images/drinks/PAROS GIN AND TONIC.jpg" 
@@ -435,6 +418,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
+          <!-- Row 2: Small fills the gap from large above -->
           <div class="gallery-small">
             <img 
               src="/images/ambience/DSC00321.JPEG" 
@@ -451,6 +435,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
+          <!-- Row 3: Small + Small + Small -->
           <div class="gallery-small">
             <img 
               src="/images/drinks/SUNSET MARRY.jpg" 
@@ -475,6 +460,15 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
+          <!-- Row 4: Large + Small -->
+          <div class="gallery-large">
+            <img 
+              src="/images/ambience/DSC00284.JPEG" 
+              alt="Paros Brewery Rooftop View"
+              class="gallery-image"
+            />
+          </div>
+          
           <div class="gallery-small">
             <img 
               src="/images/food/SPICY THAI PRAWNS.jpg" 
@@ -483,18 +477,11 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
+          <!-- Row 5: Small fills the gap from large above -->
           <div class="gallery-small">
             <img 
               src="/images/food/BLUEBERRY CHEESE CAKE.jpg" 
               alt="Blueberry Cheesecake"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-small">
-            <img 
-              src="/images/ambience/DSC00339.JPEG" 
-              alt="Ambience"
               class="gallery-image"
             />
           </div>
@@ -507,6 +494,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
+          <!-- Row 6: Small + Small + Small -->
           <div class="gallery-small">
             <img 
               src="/images/drinks/WATERMELON PUNCH .jpg" 
@@ -519,6 +507,15 @@ import Layout from '../layouts/Layout.astro';
             <img 
               src="/images/food/MEXICAN CRUNCHY ASPARAGUS ROLLS.jpg" 
               alt="Mexican Crunchy Asparagus Rolls"
+              class="gallery-image"
+            />
+          </div>
+          
+          <!-- Row 7: Large + Small -->
+          <div class="gallery-large">
+            <img 
+              src="/images/ambience/DSC00335.JPEG" 
+              alt="Celebrations at Paros"
               class="gallery-image"
             />
           </div>
@@ -673,17 +670,20 @@ import Layout from '../layouts/Layout.astro';
     height: 100%;
   }
 
-  /* Large & Small Grid Gallery */
+  /* Large & Small Grid Gallery - Uniform Layout */
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
   }
 
   @media (min-width: 768px) {
     .gallery-grid {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 16px;
+      grid-auto-rows: 250px;
     }
   }
 
@@ -693,13 +693,21 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 2px;
     cursor: pointer;
     grid-column: span 2;
-    aspect-ratio: 16 / 9;
+    grid-row: span 2;
+  }
+
+  @media (min-width: 768px) {
+    .gallery-large {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
   }
 
   @media (max-width: 767px) {
     .gallery-large {
       grid-column: span 2;
-      aspect-ratio: 4 / 3;
+      grid-row: span 1;
+      aspect-ratio: 16 / 9;
     }
   }
 
@@ -709,14 +717,7 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 2px;
     cursor: pointer;
     grid-column: span 1;
-    aspect-ratio: 1;
-  }
-
-  @media (max-width: 767px) {
-    .gallery-small {
-      grid-column: span 1;
-      aspect-ratio: 1;
-    }
+    grid-row: span 1;
   }
 
   .gallery-image {
