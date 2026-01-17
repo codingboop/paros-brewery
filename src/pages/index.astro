@@ -179,7 +179,7 @@ import Layout from '../layouts/Layout.astro';
             <img
               src="/images/ambience/Gemini_Generated_Image_suz38asuz38asuz3.png"
               alt="Celebrations at Paros Brewery"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-paros-black/85 via-paros-black/30 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 md:p-8">
@@ -399,9 +399,10 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
 
-        <!-- Dynamic Fluid Masonry Grid -->
-        <div class="gallery-masonry">
-          <div class="gallery-item gallery-item-large">
+        <!-- Large & Small Grid Gallery -->
+        <div class="gallery-grid">
+          <!-- Large images -->
+          <div class="gallery-large">
             <img 
               src="/images/ambience/DSC00323.jpg" 
               alt="Paros Brewery Rooftop"
@@ -409,39 +410,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00319.JPEG" 
-              alt="Rooftop Ambience"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/drinks/PAROS GIN AND TONIC.jpg" 
-              alt="Paros Gin and Tonic"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/food/DRAGON ROLL-VEG.jpg" 
-              alt="Dragon Roll Sushi"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item gallery-item-tall">
-            <img 
-              src="/images/ambience/DSC00321.JPEG" 
-              alt="Evening Ambience"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item gallery-item-wide">
+          <div class="gallery-large">
             <img 
               src="/images/ambience/DSC00284.JPEG" 
               alt="Paros Brewery Rooftop View"
@@ -449,71 +418,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
-            <img 
-              src="/images/food/SPICY CHICKEN CHETTINAD PIZZA.jpg" 
-              alt="Spicy Chicken Chettinad Pizza"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/drinks/SUNSET MARRY.jpg" 
-              alt="Sunset Marry"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00317.JPEG" 
-              alt="Brewery Ambience"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/food/BOK CHOY AND MUSHROOM DIMSUM.jpg" 
-              alt="Bok Choy and Mushroom Dimsum"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/drinks/PAROS SPECIAL MOCKTAIL.jpg" 
-              alt="Paros Special Mocktail"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/food/PANEER TEMPURA BAO.jpg" 
-              alt="Paneer Tempura Bao"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00289.JPEG" 
-              alt="Rooftop Setting"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/food/SPICY THAI PRAWNS.jpg" 
-              alt="Spicy Thai Prawns"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item gallery-item-wide">
+          <div class="gallery-large">
             <img 
               src="/images/ambience/DSC00335.JPEG" 
               alt="Celebrations at Paros"
@@ -521,7 +426,64 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
+          <!-- Small images -->
+          <div class="gallery-small">
+            <img 
+              src="/images/drinks/PAROS GIN AND TONIC.jpg" 
+              alt="Paros Gin and Tonic"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/ambience/DSC00321.JPEG" 
+              alt="Evening Ambience"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/food/SPICY CHICKEN CHETTINAD PIZZA.jpg" 
+              alt="Spicy Chicken Chettinad Pizza"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/drinks/SUNSET MARRY.jpg" 
+              alt="Sunset Marry"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/food/BOK CHOY AND MUSHROOM DIMSUM.jpg" 
+              alt="Bok Choy and Mushroom Dimsum"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/food/PANEER TEMPURA BAO.jpg" 
+              alt="Paneer Tempura Bao"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
+            <img 
+              src="/images/food/SPICY THAI PRAWNS.jpg" 
+              alt="Spicy Thai Prawns"
+              class="gallery-image"
+            />
+          </div>
+          
+          <div class="gallery-small">
             <img 
               src="/images/food/BLUEBERRY CHEESE CAKE.jpg" 
               alt="Blueberry Cheesecake"
@@ -529,7 +491,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
+          <div class="gallery-small">
             <img 
               src="/images/ambience/DSC00339.JPEG" 
               alt="Ambience"
@@ -537,7 +499,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
+          <div class="gallery-small">
             <img 
               src="/images/food/AMERICAN FISH AND CHIPS.jpg" 
               alt="American Fish and Chips"
@@ -545,15 +507,7 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00299.JPEG" 
-              alt="Rooftop View"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
+          <div class="gallery-small">
             <img 
               src="/images/drinks/WATERMELON PUNCH .jpg" 
               alt="Watermelon Punch"
@@ -561,26 +515,10 @@ import Layout from '../layouts/Layout.astro';
             />
           </div>
           
-          <div class="gallery-item">
+          <div class="gallery-small">
             <img 
               src="/images/food/MEXICAN CRUNCHY ASPARAGUS ROLLS.jpg" 
               alt="Mexican Crunchy Asparagus Rolls"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00324_1.JPEG" 
-              alt="Paros Brewery Interior"
-              class="gallery-image"
-            />
-          </div>
-          
-          <div class="gallery-item">
-            <img 
-              src="/images/ambience/DSC00283.JPEG" 
-              alt="Brewery Setting"
               class="gallery-image"
             />
           </div>
@@ -735,70 +673,62 @@ import Layout from '../layouts/Layout.astro';
     height: 100%;
   }
 
-  /* Dynamic Fluid Masonry Gallery */
-  .gallery-masonry {
-    columns: 2;
-    column-gap: 12px;
+  /* Large & Small Grid Gallery */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
-  @media (min-width: 640px) {
-    .gallery-masonry {
-      columns: 3;
-      column-gap: 14px;
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
     }
   }
 
-  @media (min-width: 1024px) {
-    .gallery-masonry {
-      columns: 4;
-      column-gap: 16px;
-    }
-  }
-
-  .gallery-item {
+  .gallery-large {
     position: relative;
     overflow: hidden;
     border-radius: 2px;
     cursor: pointer;
-    break-inside: avoid;
-    margin-bottom: 12px;
-    display: inline-block;
-    width: 100%;
+    grid-column: span 2;
+    aspect-ratio: 16 / 9;
   }
 
-  @media (min-width: 640px) {
-    .gallery-item {
-      margin-bottom: 14px;
+  @media (max-width: 767px) {
+    .gallery-large {
+      grid-column: span 2;
+      aspect-ratio: 4 / 3;
     }
   }
 
-  @media (min-width: 1024px) {
-    .gallery-item {
-      margin-bottom: 16px;
+  .gallery-small {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+    grid-column: span 1;
+    aspect-ratio: 1;
+  }
+
+  @media (max-width: 767px) {
+    .gallery-small {
+      grid-column: span 1;
+      aspect-ratio: 1;
     }
-  }
-
-  .gallery-item-large {
-    break-inside: avoid;
-  }
-
-  .gallery-item-wide {
-    break-inside: avoid;
-  }
-
-  .gallery-item-tall {
-    break-inside: avoid;
   }
 
   .gallery-image {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .gallery-item:hover .gallery-image {
+  .gallery-large:hover .gallery-image,
+  .gallery-small:hover .gallery-image {
     transform: scale(1.08);
   }
 </style>
